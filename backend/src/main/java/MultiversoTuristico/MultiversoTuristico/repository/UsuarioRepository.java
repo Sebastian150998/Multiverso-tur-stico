@@ -1,0 +1,11 @@
+package MultiversoTuristico.MultiversoTuristico.repository;
+import MultiversoTuristico.MultiversoTuristico.model.Usuario;
+
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+    Optional<Usuario> findByEmail(String email);
+
+}
