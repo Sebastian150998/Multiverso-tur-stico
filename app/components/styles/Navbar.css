@@ -1,40 +1,137 @@
+/* ======= GLOBAL: Elimina scroll innecesario ======= */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* ======= NAVBAR ======= */
 .navbar {
-    width: 100%;
-    height: 70px;
-    background-color: #4A0D0D;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-    box-sizing: border-box;
-    overflow-x: hidden;
-  }
-  
-  .navbar-left {
-    flex: 0 0 auto;
-  }
-  
-  .navbar-right {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
-  }
-  
-  .navbar a {
-    color: white;
-    font-size: 16px;
-    text-decoration: none;
-    font-family: 'Orbitron', sans-serif;
-    /* Eliminamos las mayúsculas forzadas */
-  }
-  
-  .navbar-icon {
-    font-size: 22px;
-    color: white;
-    cursor: pointer;
-  }
+  width: 100%;
+  height: 70px;
+  background-color: #4A0D0D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 100;
+  overflow: visible;
+}
+
+/* Izquierda */
+.navbar-left {
+  flex: 0 0 auto;
+}
+
+/* Derecha */
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  overflow: visible;
+}
+
+/* Enlaces e iconos */
+.navbar a,
+.dropdown-label {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+}
+
+.navbar-icon {
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ======= DROPDOWNS ======= */
+.dropdown {
+  position: relative;
+}
+
+/* Menú desplegable base (usuario) */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: auto;
+  right: 20px; /* 👈 Separado del borde derecho */
+  background-color: #5b0e0e;
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 999;
+  white-space: nowrap;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+  max-width: 90vw;
+  overflow-x: auto;
+
+  /* 👇 Para menú vertical de usuario */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Menú desplegable amplio (Paquetes) */
+.dropdown-menu.wide {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  left: auto;
+  right: 20px; /* 👈 También desplazado 20px desde el borde derecho */
+  width: fit-content;
+  max-width: 90vw;
+  overflow-x: auto;
+}
+
+/* Columnas del dropdown */
+.dropdown-column {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 180px;
+}
+
+.dropdown-column strong {
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.dropdown-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-column hr {
+  border: none;
+  border-top: 1px solid #888;
+  margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
   
   
   
