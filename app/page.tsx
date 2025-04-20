@@ -49,7 +49,7 @@ export default function Home() {
           {/* Botón para ir al mapa */}
           <div className="start-button-container">
             <Link href="/mapa">
-              <button className="start-button">Comienza mi aventura</button>
+              <button className="start-button">Comienza tu Aventura</button>
             </Link>
           </div>
         </div>

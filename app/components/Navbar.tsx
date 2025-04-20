@@ -59,13 +59,6 @@ export default function Navbar() {
                 <Link href="#">Spider-Man</Link>
                 <Link href="#">Doctor Strange</Link>
                 <Link href="#">Black Panther</Link>
-                <Link href="#">Scarlet Witch</Link>
-                <Link href="#">Ant-Man</Link>
-                <Link href="#">Wasp</Link>
-                <Link href="#">Vision</Link>
-                <Link href="#">Falcon</Link>
-                <Link href="#">Winter Soldier</Link>
-                <Link href="#">Captain Marvel</Link>
                 <Link href="#">Star-Lord</Link>
                 <Link href="#">Rocket</Link>
                 <Link href="#">Groot</Link>
@@ -79,13 +72,8 @@ export default function Navbar() {
                 <strong>Héroes - X-Men</strong>
                 <Link href="#">Wolverine</Link>
                 <Link href="#">Profesor X</Link>
-                <Link href="#">Jean Grey</Link>
                 <Link href="#">Cíclope</Link>
                 <Link href="#">Tormenta</Link>
-                <Link href="#">Bestia</Link>
-                <Link href="#">Coloso</Link>
-                <Link href="#">Nightcrawler</Link>
-                <Link href="#">Rogue</Link>
 
                 <hr />
 
